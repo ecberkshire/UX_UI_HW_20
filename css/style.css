@@ -1,0 +1,66 @@
+.nav {
+    background-color: rgba(10, 86, 73, 1);
+    position: fixed;
+    color: white;
+    width: 100%;
+}
+
+.clearBackground {
+    background-color: white;
+    background-size: cover;
+    height: calc(100vh - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.jumboCopy {
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    color: black;
+    text-align: center;
+}
+
+.accordianHeader {
+    text-align: center;
+    color: white;
+    background-color: rgba(10, 86, 73, 1);
+}
+
+.btn-link {
+    color: white;
+    font-size: 28px;
+}
+
+.btnMine {
+    color: white;
+    background-color: rgba(26, 162, 138, 1) !important;
+    height: 80px;
+    width: 450px;
+    font-size: 28px;
+    margin: 50px;
+    border-radius: 12px;
+}
+
+.card-body {
+    text-align: center;
+    
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  
+    
+}
+.userCard {
+    
+    margin: 25px;
+    color: white;
+    background-color:rgba(26, 162, 138, 1) ;
+    font-size: 18px;
+}

@@ -8,12 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>UX_UI_HW_20</title>
 </head>
 <body>
 <header>
     <nav>
+      <!--nav bar component bootstrap-->
 <ul class="nav nav-pills">
     <li class="nav-item">
       <a class="nav-link active" href="https://ecberkshire.github.io/UX_UI_HW_19/">Home</a>
@@ -32,36 +33,39 @@
   </nav>
   </header>
 
-  <!--jumbotron-->
-  <div class="jumbotron jumbotron-fluid">
+  <!--jumbotron component-->
+  <div class="jumbotron jumbotron-fluid clearBackground">
+    <div class="jumboCopy">
     <div class="container">
       <h1 class="display-4">Case Study</h1><br>
       <h2>A Family For Every Child Website Redesign</h2>
       <p class="lead">A remote collaborative effort between four UX/UI design students.  Our team was tasked with redesigning the website of A Family for Every Child, a local adoption agency, using the human-centered design process.  Our results are a prototype presentation and portfolio-ready case study.  Completed within a 3 week sprint.</p>
-      <img src="/images/originalSite.png">
-      <img src="/images/intro.png">
+      <img src="images/originalSite.png">
+      <img src="images/intro.png">
+    </div>
     </div>
   </div>
 
-  <!--accordian-->
+  <!--accordian component-->
   <div id="accordion">
     <div class="card">
-      <div class="card-header" id="headingOne">
+      <div class="card-header accordianHeader" id="headingOne">
         <h5 class="mb-0">
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             Research
-          </button>
+          </button> 
         </h5>
       </div>
-  
+      <!--column system nested in accordian component-->
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
         <div class="card-body">
           <h2>Through 5 1:1 interviews, a stakeholder interview and Google Analytics, our team
             discovered that there were 3 primary users of the site.  We used this information to tailor
             our design solution.</h2>
-            <button type="button" class="btn btn-primary">Interview Transcripts</button>
-            <div class="row">
-                <div class="card" style="width: 18rem;">
+            <button type="button" class="btn  btnMine">Interview Transcripts</button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="card col-lg-3 col-md-3 col-sm-12 userCard" style="width: 18rem;">
                 <div class="card-body">
                <h5 class="card-title">User Number One</h5>
                
@@ -76,10 +80,10 @@
                   glaringly bright color scheme
                   reminiscent of crayola crayons.</p>
                 
-               </div>
-              </div>
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
+                </div>
+                </div>
+              <div class="card col-lg-3 col-md-3 col-sm-12 userCard" style="width: 18rem;">
+                <div class="card-body">
               <h5 class="card-title">User Number Two</h5>
               
               <p class="card-text">This person is in the midst of
@@ -90,11 +94,11 @@
                 trainings and child
                 information.</p>
              
+                </div>
               </div>
-            </div>
 
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
+              <div class="card col-lg-3 col-md-3 col-sm-12 userCard" style="width: 18rem;">
+                <div class="card-body">
               <h5 class="card-title">User Number Three</h5>
               
               <p class="card-text">This person is a member
@@ -107,14 +111,15 @@
                 donate button easily 
                 accessible.</p>
               
+                </div>
               </div>
-            </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
     <div class="card">
-      <div class="card-header" id="headingTwo">
+      <div class="card-header accordianHeader" id="headingTwo">
         <h5 class="mb-0">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             Problem Statement
@@ -128,12 +133,12 @@
  Making information and resources about the adoption process easy to find, the adoption website delightful to use, and adoption success stories prominent will help potential parents make the right choice for their family and feel supported during the adoption process.  
 
 Parents will continue their adoption journey if they feel taken care of and supported by the adoption agency.
-          <img src="/images/wordcloud.png">
+          <img src="images/wordcloud.png">
         </div>
       </div>
     </div>
     <div class="card">
-      <div class="card-header" id="headingThree">
+      <div class="card-header accordianHeader" id="headingThree">
         <h5 class="mb-0">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             Initial Design Solution
@@ -142,7 +147,7 @@ Parents will continue their adoption journey if they feel taken care of and supp
       </div>
       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
         <div class="card-body">
-          <img src="/images/lowFidelity.png" alt="">
+          <img src="images/lowFidelity.png" alt="">
         </div>
       </div>
     </div>
