@@ -40,8 +40,10 @@
       <h1 class="display-4">Case Study</h1><br>
       <h2>A Family For Every Child Website Redesign</h2>
       <p class="lead">A remote collaborative effort between four UX/UI design students.  Our team was tasked with redesigning the website of A Family for Every Child, a local adoption agency, using the human-centered design process.  Our results are a prototype presentation and portfolio-ready case study.  Completed within a 3 week sprint.</p>
+      <div class=imageContainer>
       <img src="images/originalSite.png">
       <img src="images/intro.png">
+      </div>
     </div>
     </div>
   </div>
@@ -62,7 +64,7 @@
           <h2>Through 5 1:1 interviews, a stakeholder interview and Google Analytics, our team
             discovered that there were 3 primary users of the site.  We used this information to tailor
             our design solution.</h2>
-            <button type="button" class="btn  btnMine">Interview Transcripts</button>
+            <button type="button" class="btn  btnMine"><a href="https://drive.google.com/drive/folders/1fbD3QFJWSRxJIZoR32veT842EdUaLrWo?usp=sharing">Interview Transcripts</a></button>
             <div class="container-fluid">
               <div class="row">
                 <div class="card col-lg-3 col-md-3 col-sm-12 userCard" style="width: 18rem;">
@@ -121,19 +123,21 @@
     <div class="card">
       <div class="card-header accordianHeader" id="headingTwo">
         <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <button class="btn btn-link collapsed accordianButton" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             Problem Statement
           </button>
         </h5>
       </div>
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
+        <div class="card-body cardBodyflex">
           The process of adoption is difficult, expensive, and involves the hurts and possible challenging behaviors of the foster child.
 
  Making information and resources about the adoption process easy to find, the adoption website delightful to use, and adoption success stories prominent will help potential parents make the right choice for their family and feel supported during the adoption process.  
 
 Parents will continue their adoption journey if they feel taken care of and supported by the adoption agency.
-          <img src="images/wordcloud.png">
+            <div>
+            <img src="images/wordcloud.png">
+            </div>
         </div>
       </div>
     </div>
@@ -152,8 +156,83 @@ Parents will continue their adoption journey if they feel taken care of and supp
       </div>
     </div>
   </div>
-  
+    <!--accordian two-->
 
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header accordianHeader" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Mobile Testing Iterations
+            </button>
+          </h2>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <img src="/images/mobile.png" alt="mobile version images">
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header accordianHeader" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Desktop A/B Testing Iterations
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <img src="/images/a_bTesting.png" alt="A and B Testing Images">
+            <ul>
+              <li>Playfair Display preferred over Gloria Hallelujah</li>
+              <li>Transparent cards over solid</li>
+              <li>Interactive cards over static</li>
+              <li>Blue navigation bar preferred over grey</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-header accordianHeader" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Final Prototype
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <img src="/images/figmaFinal.png" alt="Final Prototype">
+            <button type="button" class="btn  btnMine"><a href="https://www.figma.com/file/OpBBeivgSfJ7H1yZf1sZdL/AFFEC-mid-fi?node-id=50%3A94">Figma Prototype</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <!--footer-->
+  <h2 class="h2footer">Let's Connect</h2>
+
+  <footer>
+    <div class=footerSocial>
+      <img  src="images/linkedin 1.png" alt="LinkedIn" max-height= 100px max-width= 100px>
+      <img src="images/instagram.png"  height= 100px width = 100px alt="Instagram">
+    </div>
+
+    <div class=footerCard>
+      <h3 class=h3FooterCard>Erica Berkshire</h3>
+      <a href="ecberkshire@gmail.com">ecberkshire@gmail.com</a>
+      <p>(541) 953-5362</p>
+    </div>
+    <div class="copyright">
+      <p>Copyright 2021</p>
+    </div>
+  </footer>
 
     
 </body>
