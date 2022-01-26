@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css">
     <title>UX_UI_HW_20</title>
 </head>
+<body>
 <header>
     <nav>
 <ul class="nav nav-pills">
@@ -20,23 +21,135 @@
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Resume</a>
-        <a class="dropdown-item" href="#">LinkedIn</a>
-        <a class="dropdown-item" href="#">Behance</a>
+        <a class="dropdown-item" href="https://docs.google.com/document/d/1G94MOc7RdGG9F3TmEn4eaI5x6GAPAzHzs3-EhDIU1Cc/edit?usp=sharing">Resume</a>
+        <a class="dropdown-item" href="https://www.linkedin.com/in/erica-berkshire-b795821b0/">LinkedIn</a>
+        <a class="dropdown-item" href="https://www.behance.net/ericaberkshire">Behance</a>
         <div class="dropdown-divider"></div>
        
       </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li>
+    
   </ul>
   </nav>
   </header>
-<body>
+
+  <!--jumbotron-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Case Study</h1><br>
+      <h2>A Family For Every Child Website Redesign</h2>
+      <p class="lead">A remote collaborative effort between four UX/UI design students.  Our team was tasked with redesigning the website of A Family for Every Child, a local adoption agency, using the human-centered design process.  Our results are a prototype presentation and portfolio-ready case study.  Completed within a 3 week sprint.</p>
+      <img src="/images/originalSite.png">
+      <img src="/images/intro.png">
+    </div>
+  </div>
+
+  <!--accordian-->
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Research
+          </button>
+        </h5>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          <h2>Through 5 1:1 interviews, a stakeholder interview and Google Analytics, our team
+            discovered that there were 3 primary users of the site.  We used this information to tailor
+            our design solution.</h2>
+            <button type="button" class="btn btn-primary">Interview Transcripts</button>
+            <div class="row">
+                <div class="card" style="width: 18rem;">
+                <div class="card-body">
+               <h5 class="card-title">User Number One</h5>
+               
+                <p class="card-text">This person is new to the
+                  adoption process.  They are 
+                  nervous about all of the 
+                  potential risks associated
+                  with adoption.  
+                  
+                  They are deterred by cluttered 
+                  navigation bars and a 
+                  glaringly bright color scheme
+                  reminiscent of crayola crayons.</p>
+                
+               </div>
+              </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+              <h5 class="card-title">User Number Two</h5>
+              
+              <p class="card-text">This person is in the midst of
+                the adoption process.
+                
+                They need to be able to
+                quickly access forms,
+                trainings and child
+                information.</p>
+             
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+              <h5 class="card-title">User Number Three</h5>
+              
+              <p class="card-text">This person is a member
+                of the community who would
+                like to volunteer or donate.
+                
+                They need to be able to
+                easily see volunteer 
+                opportunities, and have the
+                donate button easily 
+                accessible.</p>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Problem Statement
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          The process of adoption is difficult, expensive, and involves the hurts and possible challenging behaviors of the foster child.
+
+ Making information and resources about the adoption process easy to find, the adoption website delightful to use, and adoption success stories prominent will help potential parents make the right choice for their family and feel supported during the adoption process.  
+
+Parents will continue their adoption journey if they feel taken care of and supported by the adoption agency.
+          <img src="/images/wordcloud.png">
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Initial Design Solution
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          <img src="/images/lowFidelity.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
     
 </body>
     <!-- JavaScript Bundle with Popper -->
